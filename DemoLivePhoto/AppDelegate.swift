@@ -10,10 +10,42 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    func cleanupDocumentsDirectory() {
+        
+        var documentsURL: URL?
+        
+        do {
+            documentsURL = try FileManager.default.url(for:.documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        }
+        catch {
+            print(error)
+            return
+        }
+        
+        if let documentsPath = documentsURL?.path {
+            
+            guard let en = FileManager.default.enumerator(atPath: documentsPath) else {
+                return
+            }
+            
+            while let file = en.nextObject() {
+                guard let fileURLToDelete = documentsURL?.appendingPathComponent(file as! String) else {
+                    continue
+                }
+                if FileManager.default.fileExists(atPath: fileURLToDelete.path) {
+                    do {
+                        
+                        try FileManager.default.removeItem(atPath: fileURLToDelete.path)
+                        
+                    } catch _ as NSError {
+                    }
+                }
+            }
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        cleanupDocumentsDirectory()
         return true
     }
 
