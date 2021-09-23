@@ -16,6 +16,8 @@
 		2589C65A26FAD5D2009A450A /* AVAsset-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C65826FAD5D2009A450A /* AVAsset-extensions.swift */; };
 		2589C65B26FAD5D2009A450A /* UIViewController-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C65926FAD5D2009A450A /* UIViewController-extensions.swift */; };
 		2589C65D26FAD5D7009A450A /* LivePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C65C26FAD5D7009A450A /* LivePhoto.swift */; };
+		2589C65F26FAF0CE009A450A /* pairedVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2589C65E26FAF0CE009A450A /* pairedVideo.mov */; };
+		2589C66326FC1B12009A450A /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2589C66226FC1B12009A450A /* CacheManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2589C65826FAD5D2009A450A /* AVAsset-extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVAsset-extensions.swift"; sourceTree = "<group>"; };
 		2589C65926FAD5D2009A450A /* UIViewController-extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-extensions.swift"; sourceTree = "<group>"; };
 		2589C65C26FAD5D7009A450A /* LivePhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePhoto.swift; sourceTree = "<group>"; };
+		2589C65E26FAF0CE009A450A /* pairedVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = pairedVideo.mov; sourceTree = "<group>"; };
+		2589C66226FC1B12009A450A /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				2589C64826FAD260009A450A /* Main.storyboard */,
 				2589C64B26FAD261009A450A /* Assets.xcassets */,
 				2589C64D26FAD261009A450A /* LaunchScreen.storyboard */,
+				2589C65E26FAF0CE009A450A /* pairedVideo.mov */,
 				2589C65026FAD261009A450A /* Info.plist */,
 			);
 			path = DemoLivePhoto;
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2589C65C26FAD5D7009A450A /* LivePhoto.swift */,
+				2589C66226FC1B12009A450A /* CacheManager.swift */,
 			);
 			path = LivePhoto;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 				2589C64F26FAD261009A450A /* LaunchScreen.storyboard in Resources */,
 				2589C64C26FAD261009A450A /* Assets.xcassets in Resources */,
 				2589C64A26FAD260009A450A /* Main.storyboard in Resources */,
+				2589C65F26FAF0CE009A450A /* pairedVideo.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +175,7 @@
 				2589C64526FAD260009A450A /* SceneDelegate.swift in Sources */,
 				2589C65B26FAD5D2009A450A /* UIViewController-extensions.swift in Sources */,
 				2589C65A26FAD5D2009A450A /* AVAsset-extensions.swift in Sources */,
+				2589C66326FC1B12009A450A /* CacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

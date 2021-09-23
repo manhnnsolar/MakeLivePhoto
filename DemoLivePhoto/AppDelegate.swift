@@ -10,12 +10,12 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func cleanupDocumentsDirectory() {
+    func cleanupCacheDirectory() {
         
         var documentsURL: URL?
         
         do {
-            documentsURL = try FileManager.default.url(for:.documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            documentsURL = try FileManager.default.url(for:.cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         }
         catch {
             print(error)
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        cleanupDocumentsDirectory()
+        cleanupCacheDirectory()
         return true
     }
 
